@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="../js/registerScript.js"></script>
 </head>
 <body>
     <nav>
@@ -22,7 +23,7 @@
     <img  width="200px" src="https://images.pexels.com/photos/261719/pexels-photo-261719.jpeg?auto=compress&cs=tinysrgb&w=600"> 
 </div>
     <div style="margin: 20px; border: black solid 3px; padding: 30px; display: flex; justify-content: space-around;">
-    <form>
+    <form id="submit-form">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label>
@@ -42,11 +43,13 @@
         <input type="password" id="pword" name="pword"><br>
         <label for="pword2">Confirm Password:</label>
         <input type="password" id="pword2" name="pword2"><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Register">
       </form> 
     </div>
    
-      <p>If you click the "Submit" button, nothing will happen yet, but the page will refresh.</p>
+      <p>If you click the "Submit" button, nothing will happen yet.</p>
+      <p>Your inputs will show up below.</p>
+      <div id="user-inputs"></div>
     
 </body>
 </html>
