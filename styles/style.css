@@ -1,0 +1,37 @@
+/* CSS HEX
+--periwinkle: #c6caedff;
+--rose-quartz: #ada8beff;
+--mountbatten-pink: #a28497ff;
+--charcoal: #404e5cff;
+--licorice: #1f0812ff; */
+
+/* CSS HSL */
+:root {
+--periwinkle: hsla(234, 52%, 85%, 1);
+--rose-quartz: hsla(254, 14%, 70%, 1);
+--mountbatten-pink: hsla(322, 14%, 58%, 1);
+--charcoal: hsla(210, 18%, 31%, 1);
+--charcoal-light: hsla(210, 18%, 71%, 1);
+--licorice: hsla(334, 59%, 8%, 1);
+}
+
+body {
+    background-color: var(--charcoal);
+    color: var(--mountbatten-pink);
+    animation-name: bgndColor;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+
+}
+
+@keyframes bgndColor {
+    from {background-color: var(--charcoal); color: var(--mountbatten-pink)}
+    to {background-color: var(--charcoal-light); color: var(--licorice);}
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,244 @@
+<!-- // Requirements -->
+<!-- still need: one more animation, table -->
+
+
+<!-- HTML Requirements
+●	Have at least three pages.
+            ---
+            index.html
+            ./pages/login.html
+            ./pages/register.html
+            ---
+○	Keep the grid system consistent between pages as much as possible.
+●	Use at least ten different HTML tags.
+●	Include at least one table.
+●	Include at least two forms.
+            ---
+            ./pages/login.html      Login form
+            ./pages/register.html   Register form
+            ---
+●	Include at least one dropdown menu.
+            ---
+            ./pages/register.html   Register form   select
+            ---
+●	Include at least one of each of the following forms of content: 
+            Yes     ○	Text.
+            In Register.html    ○	Images.
+            In Index.html   ○	GIFs. -->
+
+
+<!-- Resources for free content:
+●	Text: Lipsum, a Lorem Ipsum text generator.
+●	Images: Pexels, a resource for stock photos (and other media)
+●	GIFs: Motion Elements, a resource GIFs (and other media) -->
+
+
+<!-- CSS Requirements
+●	Make use of inline, internal, and external styling.
+                ---
+                external file linked to all pages
+                inline styling in register.html and login.html
+                internal styling in index.html
+                ---
+●	Use five different CSS selectors.
+●	Use colors that complement each other.
+    ○	Coolors is one of many resources that can help you find a color palette.
+                ---
+                https://coolors.co/c6caed-ada8be-a28497-404e5c-1f0812
+                ---
+●	Use Flexbox and/or the Bootstrap Grid.
+                ---
+                used flexbox
+                ---
+●	Use at least two CSS animations. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <style>
+        #science {
+            background-image: url(https://media1.giphy.com/media/hE7qzzcOwXh5u/giphy.webp?cid=790b7611gns516o7uecrv0ntv4d1xasu3nwybc991hk1cn7p&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #math {
+            background-image: url(https://media1.giphy.com/media/HBWbIuHvXI2Eo/giphy.webp?cid=790b7611vck2kb6cv4km0dh5kobrg0a5u5qi92s0s9y0k2uq&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #english {
+            background-image: url(https://media2.giphy.com/media/uDj0Fa3q8ipBS/200.webp?cid=ecf05e470p8g7zei246p414agwik04qu2abycj83ym2z25nc&ep=v1_gifs_search&rid=200.webp&ct=g);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #social {
+            background-image: url(https://media4.giphy.com/media/jOUbvbiQ1AKTJeDvJ6/giphy.webp?cid=790b7611kgjzqfya6df2c2bmui6kodwq7p58jyjqqo1illzc&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .subject {
+            min-width: 30vw;
+            min-height: 30vw;
+        }
+    </style>
+    <nav>
+        <a href=#>HOME</a>
+        <a href="./pages/login.html">login</a>
+        <a href="./pages/register.html">register</a>
+        <a>lessons for students</a>
+        <a>planning for teachers</a>
+        <a>content standards for teachers</a>
+    </nav>
+    <h1>GED Class Home</h1>
+    <div style="display:flex; flex-direction: column;">
+        <div class="container">
+            <div class="subject" id="science" style="color:white">Science</div>
+            <div>
+                <table>
+                    <caption>Science Modules</caption>
+                    <thead>
+                        <tr>
+                          <th>header1</th>
+                          <th>header2</th>
+                          <th>header3</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>text1.1</td>
+                           <td>text1.2</td>
+                           <td>text1.3</td>
+                         </tr>
+                         <tr>
+                           <td>text2.1</td>
+                           <td>text2.2</td>
+                           <td>text2.3</td>
+                         </tr>
+                         <tr>
+                           <td>text3.1</td>
+                           <td>text3.2</td>
+                           <td>text3.3</td>
+                         </tr>
+                         <tr>
+                         </tr>
+                      </tbody>
+                </table>
+                <br><br>
+                <table>
+                    <caption>Math Modules</caption>
+                    <thead>
+                        <tr>
+                          <th>header1</th>
+                          <th>header2</th>
+                          <th>header3</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>text1.1</td>
+                           <td>text1.2</td>
+                           <td>text1.3</td>
+                         </tr>
+                         <tr>
+                           <td>text2.1</td>
+                           <td>text2.2</td>
+                           <td>text2.3</td>
+                         </tr>
+                         <tr>
+                           <td>text3.1</td>
+                           <td>text3.2</td>
+                           <td>text3.3</td>
+                         </tr>
+                         <tr>
+                         </tr>
+                      </tbody>
+                </table>
+            </div>
+            <div class="subject" id="math">Math</div>
+        </div>
+        <div class="container">
+            <div class="subject" id="social">Social Studies</div>
+            <div>
+                <table>
+                    <caption>Social Studies Modules</caption>
+                    <thead>
+                        <tr>
+                          <th>header1</th>
+                          <th>header2</th>
+                          <th>header3</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>text1.1</td>
+                           <td>text1.2</td>
+                           <td>text1.3</td>
+                         </tr>
+                         <tr>
+                           <td>text2.1</td>
+                           <td>text2.2</td>
+                           <td>text2.3</td>
+                         </tr>
+                         <tr>
+                           <td>text3.1</td>
+                           <td>text3.2</td>
+                           <td>text3.3</td>
+                         </tr>
+                         <tr>
+                         </tr>
+                      </tbody>
+                </table>
+                <br><br>
+                <table>
+                    <caption>English Modules</caption>
+                    <thead>
+                        <tr>
+                          <th>header1</th>
+                          <th>header2</th>
+                          <th>header3</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>text1.1</td>
+                           <td>text1.2</td>
+                           <td>text1.3</td>
+                         </tr>
+                         <tr>
+                           <td>text2.1</td>
+                           <td>text2.2</td>
+                           <td>text2.3</td>
+                         </tr>
+                         <tr>
+                           <td>text3.1</td>
+                           <td>text3.2</td>
+                           <td>text3.3</td>
+                         </tr>
+                         <tr>
+                         </tr>
+                      </tbody>
+                </table>
+            </div>
+            <div class="subject" id="english">English</div>
+        </div>
+    </div>
+</body>
+
+</html>

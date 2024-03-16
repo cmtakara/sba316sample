@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="./login.html">login</a>
+        <a href="./register.html">register</a>
+        <a>lessons for students</a>
+        <a>planning for teachers</a>
+        <a>content standards for teachers</a>
+    </nav>
+    
+    <h1>Register</h1>
+    <div>
+        Sign up to see the calendar of lessons.
+    <img  width="200px" src="https://images.pexels.com/photos/261719/pexels-photo-261719.jpeg?auto=compress&cs=tinysrgb&w=600"> 
+</div>
+    <div style="margin: 20px; border: black solid 3px; padding: 30px; display: flex; justify-content: space-around;">
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="uname">User name (email address for students):</label>
+        <input type="text" id="uname" name="uname"><br>
+
+        <label for="role">Role:</label>
+        <select name="role" id="role">
+            <option value="student">student</option>
+            <option value="teacher">teacher</option>
+            <option value="guest">guest</option>
+        </select>
+        <br>
+        <label for="pword">Password:</label>
+        <input type="password" id="pword" name="pword"><br>
+        <label for="pword2">Confirm Password:</label>
+        <input type="password" id="pword2" name="pword2"><br>
+        <input type="submit" value="Submit">
+      </form> 
+    </div>
+   
+      <p>If you click the "Submit" button, nothing will happen yet, but the page will refresh.</p>
+    
+</body>
+</html>
