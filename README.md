@@ -8,4 +8,4 @@ The commented code is left in so that learners can see potential points of troub
 ## Deployed Links
 [SBA 316 on github pages](https://cmtakara.github.io/sba316sample/index.html)
 This builds the new assignment requirements on top of the first assignment.  The link to the first assignment is below:
-[SBA 307 on github pages](https://github.com/cmtakara/sba307sample/deployments/github-pages)
+[SBA 307 on github pages](https://cmtakara.github.io/sba307sample/)
